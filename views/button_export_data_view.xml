@@ -7,17 +7,13 @@
 		<field name="name">export.data.form</field>
 		<field name="model">export.data</field>
 		<field name="arch" type="xml">
-			<form string="button">
-				<sheet>
-                   
-					   
-                       <button name="action_view_export_data" type="action"  string="Export data"/>
-					
-                 
-				</sheet>
-			</form>
+		<form string="button">
+                <sheet>
+                     <button name="action_view_export_data" type="action"  string="Export data"/>
+                </sheet>
+		</form>
 		</field>
-    </record>
+        </record>
 
 
 
