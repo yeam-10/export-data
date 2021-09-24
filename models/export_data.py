@@ -25,7 +25,7 @@ from odoo import models, fields
 class ExportData(models.Model):
     _name = "export.data"
 
-    data = fields.char(string="sta")
+    data = fields.Char(string="sta")
 
 
     
