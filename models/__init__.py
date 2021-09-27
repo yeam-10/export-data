@@ -1,2 +1,1 @@
-# -*- coding: utf-8 -*-
-from . import export_data
+from . import inherit_product_template

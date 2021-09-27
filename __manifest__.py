@@ -1,30 +1,27 @@
-# -*- coding: utf-8 -*-
 {
-  'name':'Button',
-  'summary': """
-        Alfa Soluciones
+    'name': "Inventario por ubicacion",
+    'version': '1.0',
+    'depends': ['base','stock','product'],
+    'author': "Alfa Soluciones",
+    'category': 'Category',
+    'description': """
+     Este modulo se encarga de exportar el invetario segun la ubicacion seleccionada.
+     - Las siguientes librerias deben estar instaladas:
+        * pandas
+        * psycopg2
+     Se recomienda utilizar pip para instalarlos
+        * pip install pandas
+        * pip install psycopg2
     """,
-  'description': '''
-          Este módulo exportar data.
-	  ''',
-  'version':'1.0',
-  'author':' Alfa Soluciones',
-  'website': "",
-  'application': False,
-  'data': [
-    #'security/security.xml',
-    # 'security/ir.model.access.csv',
-    # 'report/clinica_visualizer_report.xml',
-    #'report/clinica_visualizer_report_template.xml',
-    #'views/clinica_control_history_view.xml',
-    'views/button_export_data_view.xml',
-    # 'views/inherit_doctor_calendar_view.xml',
-    # 'views/invisible_menu.xml',
-    #'views/clinica_record_list_visualizer_view.xml',
-    # 'views/inherit_prescription.xml',
-  ],
+    # data files always loaded at installation
+    'data': [
 
-
-  'category': '',
-  'depends': ['base'],
+        'wizard/wizard_export.xml',
+        'views/inherit_stock.xml'
+       
+    ],
+    # data files containing optionally loaded demonstration data
+    #'demo': [
+    #    'demo/demo_data.xml',
+    #],
 }

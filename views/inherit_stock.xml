@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="inherit_product_template_only_form_view" model="ir.ui.view">
+        <field name="name">product.template.only.form.view</field>
+        <field name="model">product.template</field>
+        <field name="priority" eval="5"/>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_view_export_test"
+                        class="oe_stat_button"
+                        icon="fa-bars"
+                        type="object"
+                        string="Exportar">
+                </button>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- <record id="handy_config_settings_action" model="ir.actions.act_window">
+        <field name="name">Configuración</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="res_config_settings_view_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'handy', 'bin_size': False}</field>
+    </record>
+
+    <menuitem 
+    id="handy_integration" 
+    name="Integración Handy" 
+    groups="base.group_system"/>
+    <menuitem 
+    parent="handy_integration" 
+    action="handy_config_settings_action" 
+    id="handy_integration02" 
+    sequence="0"
+    groups="base.group_system"/> -->
+
+</odoo>
